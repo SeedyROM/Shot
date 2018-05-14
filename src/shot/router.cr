@@ -6,7 +6,7 @@ module Shot
         alias Callback = Proc(HTTP::Server::Context, Nil)
         alias Route = Tuple(Symbol, String, Callback)
 
-        @@routes = [] of Route 
+        @@routes = Set(Route).new
         
         def self.routes
             @@routes
