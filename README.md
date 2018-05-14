@@ -31,9 +31,9 @@ end
 Shot.start  # Default to listening on localhost:5000!
 ```
 
-## Development
+<!-- ## Development
 
-TODO: Write development instructions here
+TODO: Write development instructions here -->
 
 ## Contributing
 
