@@ -3,7 +3,7 @@ require "http/server"
 
 require "./shot/*"
 
-module SHOT
+module Shot
   HTTP_VERBS = [:get, :post, :put, :delete, :head, :patch]
 
   private macro build_route_helpers
@@ -22,12 +22,12 @@ module SHOT
       handlers = [
         HTTP::ErrorHandler.new,
         HTTP::LogHandler.new,
-        SHOT::RouteHandler.new,
+        Shot::RouteHandler.new,
       ]
     else
       handlers = [
         HTTP::ErrorHandler.new,
-        SHOT::RouteHandler.new,
+        Shot::RouteHandler.new,
       ]
     end
 

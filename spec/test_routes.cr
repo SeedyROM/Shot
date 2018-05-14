@@ -1,4 +1,4 @@
-include SHOT
+include Shot
 
 get "/hello" do |ctx|
   ctx.response.puts("Hello world!")

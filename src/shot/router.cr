@@ -1,7 +1,7 @@
 require "http"
 require "http/server"
 
-module SHOT
+module Shot
     class Router
         alias Callback = Proc(HTTP::Server::Context, Nil)
         alias Route = Tuple(Symbol, String, Callback)

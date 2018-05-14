@@ -1,3 +1,3 @@
-module SHOT
+module Shot
   VERSION = "0.1.0"
 end

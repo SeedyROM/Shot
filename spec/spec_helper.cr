@@ -3,5 +3,5 @@ require "http/client"
 require "../src/shot"
 require "./test_routes"
 
-spawn { SHOT.start(silent: true) }
+spawn { Shot.start(silent: true) }
 Fiber.yield

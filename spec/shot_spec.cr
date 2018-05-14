@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe SHOT::Router do
+describe Shot::Router do
   it "It should respond to get requests" do
     response = HTTP::Client.get "http://localhost:5000/hello"
     response.status_code.should eq 200 
@@ -11,6 +11,4 @@ describe SHOT::Router do
     response = HTTP::Client.post "http://localhost:5000/comment"
     response.status_code.should eq 201
   end
-
-  
 end
