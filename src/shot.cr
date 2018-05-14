@@ -17,9 +17,8 @@ module SHOT
   build_route_helpers
 
   def self.start(host = "localhost", port = 5000, silent=false)
-    puts "Listening at #{host}:#{port}..."
-    
     if !silent
+      puts "💉  Listening at #{host}:#{port}..."
       handlers = [
         HTTP::ErrorHandler.new,
         HTTP::LogHandler.new,
