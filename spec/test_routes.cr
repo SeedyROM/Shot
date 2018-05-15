@@ -1,5 +1,3 @@
-include Shot
-
 get "/hello" do |ctx|
   ctx.response.puts("Hello world!")
 end

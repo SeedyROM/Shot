@@ -31,6 +31,8 @@ module Shot
       ]
     end
 
-    HTTP::Server.new(host, port, handlers).listen
+    HTTP::Server.new(host, port, handlers).listen(reuse_port: true)
   end
 end
+
+include Shot
