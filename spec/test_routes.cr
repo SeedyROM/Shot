@@ -1,3 +1,4 @@
+# Test Initial DSL
 get "/hello" do |ctx|
   ctx.response.puts("Hello world!")
 end
