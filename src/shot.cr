@@ -31,7 +31,9 @@ module Shot
       ]
     end
 
-    HTTP::Server.new(host, port, handlers).listen(reuse_port: true)
+    server = HTTP::Server.new(handlers)
+    server.bind_tcp host, port, reuse_port: true
+    server.listen
   end
 end
 
